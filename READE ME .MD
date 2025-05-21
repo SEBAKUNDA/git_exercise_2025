@@ -300,3 +300,212 @@ Erics-MacBook-Pro:exercises_2025 eric$ git branch
 * main
 Erics-MacBook-Pro:exercises_2025 eric$ 
 ```
+```bash
+nothing to commit, working tree clean
+192:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+Erics-MacBook-Pro:exercises_2025 eric$ git status
+On branch ft/team-page
+Your branch is up to date with 'origin/ft/team-page'.
+
+nothing to commit, working tree clean
+Erics-MacBook-Pro:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+* ft/team-page
+  main
+Erics-MacBook-Pro:exercises_2025 eric$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Erics-MacBook-Pro:exercises_2025 eric$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Erics-MacBook-Pro:exercises_2025 eric$ git git add .
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+Erics-MacBook-Pro:exercises_2025 eric$ git add .
+Erics-MacBook-Pro:exercises_2025 eric$ git commit -m"after resolving"
+[main 0eed253] after resolving
+ 1 file changed, 7 deletions(-)
+Erics-MacBook-Pro:exercises_2025 eric$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 363 bytes | 363.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SEBAKUNDA/git_exercise_2025.git
+   762e36b..0eed253  main -> main
+Erics-MacBook-Pro:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+Erics-MacBook-Pro:exercises_2025 eric$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   READE ME .MD
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Erics-MacBook-Pro:exercises_2025 eric$ git add .
+Erics-MacBook-Pro:exercises_2025 eric$ git commit -m"read me"
+[main ad99e5a] read me
+ 1 file changed, 108 insertions(+)
+Erics-MacBook-Pro:exercises_2025 eric$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1014 bytes | 1014.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SEBAKUNDA/git_exercise_2025.git
+   0eed253..ad99e5a  main -> main
+Erics-MacBook-Pro:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+Erics-MacBook-Pro:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+Erics-MacBook-Pro:exercises_2025 eric$ 
+ *  History restored 
+
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+192:exercises_2025 eric$ git status
+On branch main
+192:exercises_2025 eric$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+192:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+192:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+192:exercises_2025 eric$ git branch
+  dev
+  ft/bundle2
+  ft/contact-page
+  ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+192:exercises_2025 eric$ git branch
+192:exercises_2025 eric$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+192:exercises_2025 eric$ pwd
+/Users/eric/exercises_2025
+192:exercises_2025 eric$ git remote add https://github.com/SEBAKUNDA/GitRep.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+192:exercises_2025 eric$ git remote add git-copy https://github.com/SEBAKUNDA/GitRep.git
+192:exercises_2025 eric$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+192:exercises_2025 eric$ git add .
+192:exercises_2025 eric$ git commit -m"commiting"
+[main f9187f2] commiting
+ 1 file changed, 12 insertions(+)
+ create mode 100644 home.html
+192:exercises_2025 eric$ git remote -v
+git-copy        https://github.com/SEBAKUNDA/GitRep.git (fetch)
+git-copy        https://github.com/SEBAKUNDA/GitRep.git (push)
+origin  https://github.com/SEBAKUNDA/git_exercise_2025.git (fetch)
+origin  https://github.com/SEBAKUNDA/git_exercise_2025.git (push)
+192:exercises_2025 eric$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 525 bytes | 525.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SEBAKUNDA/git_exercise_2025.git
+   ad99e5a..f9187f2  main -> main
+192:exercises_2025 eric$ git push git-copy main
+Enumerating objects: 39, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (39/39), 6.43 KiB | 1.61 MiB/s, done.
+Total 39 (delta 11), reused 0 (delta 0)
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/SEBAKUNDA/GitRep.git
+ * [new branch]      main -> main
+192:exercises_2025 eric$ 
+```
